@@ -5,50 +5,7 @@ from config.datasets_config import DatasetBaseConfig,PreprocessingConfig
 
 class FluorescenceCovidConfig(DatasetBaseConfig):
     """
-
-    TODO : afficher stat de data covid et control et faire la nouvelle image
-    Les questions ici sont de savoir : 
-    - Y a t'il une association entre microglie et vaisceaux sanguins 
-    On peut comparer les CD68 dans des situations de covid et sain donc peut etre diff de morphologie -> (le cd68 est pas génial). 
-    La souris l'exprime mieux que chez l'humain. Dans les controls il y en a peu car seulement en cas de pathologie. 
-    Dans le covid ce qu'il faut faire -> 
-
-    Avant dimanche soir : 
-
-
-    - Images representative pour donner des petits message sur 1 cas 
-        - Sur la classification 
-        - Sur le DBSCAN 
-        - Sur la colocalisations 
-
-    
-    En meme temps : je reflechi sur les questions scientifiques qu'on se pose avec ce dataset :
-
-    On s'interesse a 3 types de celules dans l'analyse, le type nuclei sert juste dans la question Q1 a identifier les regions anatomiques. 
-    Les 3 types de celluels sont les suivants : bleu, blanc et superposition bleu+blanc (si il y a 20% de superposition on considère la cellule comme appartenant au type 3, mais est ce qu'on garde les 2 types initiauyx ? )
-    Les 3 questions qu'on se posent sont les suivantes : 
-    1) Segmentation anatomique des régions -> dans R1 on a + de ce type de cellule, dans R2 on a + de ce type de cellule. -> Segment 
-    2) Analyse des morphologies par régions d'intérets ->> Je regarde les IBA 1 de cette regions , les CD68 et la combinaison des 2 et j'ai les premieres resultats. 
-    3) DBSCAN pour les 3 populations differentes 
-    4) Association avec le border ou les vaisceaux sanguis 
-
-        D'ici dimanche, fiare une 
-
-    Covid Data from this link : https://unioxfordnexus-my.sharepoint.com/personal/wolf2242_ox_ac_uk/_layouts/15/onedrive.aspx?fromShare=true&ga=1&isAscending=true&id=%2Fpersonal%2Fwolf2242%5Fox%5Fac%5Fuk%2FDocuments%2FMarco%2DKatie%2DScans%2DNatureNeuro&sortField=FileSizeDisplay
-
-    Probleme pour lire 
-    Possible solution si c'est le cas pour plusieurs : 
-
-    from pylibCZIrw import czi as pyczi
-    path = slide_filepath = slide.get_training_slide_path(2)
-    czi = czifile.imread(slide_filepath)
-    type(czi) = np.array 
-
-    Notes : 
-    EN general, les images dans chaque cannaux ont des valeurs dans un large spectre avec beaucoup entre 0 et 50 et quelques unes a R0
     """
-    # Pour le sfluorescences, je dois créer une mécanique pour que les noms de slides soient ainsi : j'ai tous les noms normaux, et je change les noms pour 
-    # les numeroter de 1 à CxN en séparant chaque slide par C (nombre de canaux) : s'il y a 3 cannaux car 3 fluorophores alors je numérote 001, 005, 009 ... et comme ça les 001_im_001_all,002_im_001_canal_1,002_im_002_canal_2 et comme ça apres ca reste la meme chose avec les slides 
     def __init__(self):
         dataset_name = "covid_data_immunofluorescence"
         super().__init__(dataset_name)  # Call the constructor of the parent class
