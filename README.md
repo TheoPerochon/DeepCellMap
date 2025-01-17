@@ -2,12 +2,14 @@
 
 Algorithms associated with the submission of the paper titled
 \"Unraveling Microglial Spatial Organization in the Developing Human Brain with DeepCellMap\" to Nature
-Communications. Section `Reproductibility IHC guide and validation DeepCellMap` can be used to reproduce paper results on microglia during brain fetal development and to reproduce validation experiments with generated data. Section `How to use DeepCellMap (general case)` can be use in the general case and to reproduce results on fluorescence data. In the coming version of DeepCellMap package, there will be only one section `How to use DeepCellMap` associated with a section `demo`. 
+Communications. 
+
+Section `Reproductibility IHC guide and validation DeepCellMap` can be used to reproduce paper results on microglia during brain fetal development and to reproduce validation experiments with generated data. Section `How to use DeepCellMap (general case)` can be use in the general case and to reproduce results on fluorescence data. In the coming version of DeepCellMap package, there will be only one section `How to use DeepCellMap` associated with a section `demo`. 
 
 ![Alternative text](docs/images/cover_readme.png)
 
 
-`DeepCellMap` is a Python package containing tools for analyzing the spatial distribution of cells in tissues (histological images and fluorescence images). DeepCellMap consists of various independent modules enabling cell detection and classification, segmentation of anatomical regions, analysis of cell-cell and cell-region couplings, as well as analysis of the distribution of cell populations in clusters and the interactions between clusters of different populations. 
+`DeepCellMap` is a Python package containing methods for analyzing the spatial distribution of cells in tissues (histological images and fluorescence images). DeepCellMap consists of various independent modules enabling cell detection and classification, segmentation of anatomical regions, analysis of cell-cell and cell-region couplings, as well as analysis of the distribution of cell populations in clusters and the interactions between clusters of different populations. 
 
 **Summary** 
 
