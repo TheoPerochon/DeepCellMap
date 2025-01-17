@@ -1,0 +1,68 @@
+{
+    "param_config_rois_reconstruction": {
+        "model_name": "best_model",
+        "training_set_config_name": "prol_amoe_clust_phag_rami",
+        "verbose": 0,
+        "get_rgb": false,
+        "save_table_cells": true,
+        "display_rect_roi_in_tissue": false,
+        "display_example_each_states": false,
+        "nb_cells_per_state_to_display": 20,
+        "param_fig_classified_cells": {
+            "save_img_classified_cells": false,
+            "figsize": [
+                20,
+                20
+            ],
+            "display_fig": false,
+            "with_background": false,
+            "with_roi_delimiter": false,
+            "with_center_of_mass": false,
+            "liste_cells_state_to_display": [
+                "Amoeboid",
+                "Proliferative",
+                "Cluster",
+                "Phagocytic",
+                "Ramified"
+            ]
+        }
+    },
+    "param_colocalisation": {
+        "list_levelsets": [
+            0,
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            1100,
+            1200,
+            1300,
+            1400,
+            1500,
+            1600,
+            1700,
+            1800,
+            1900,
+            2000,
+            2100
+        ],
+        "save_fig_B_cells_in_A_levelsets": false,
+        "save_figure_B_in_border_levelsets": false
+    },
+    "param_dbscan_cluster_analysis": {
+        "min_sample": 4,
+        "param_experiences_pts_removing": {
+            "n_experiment": 3,
+            "percent": 10,
+            "threshold_conserved_area": 60
+        },
+        "display_convex_hull_clusters": false,
+        "save_figure_dbscan": false
+    }
+}
