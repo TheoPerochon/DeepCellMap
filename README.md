@@ -11,9 +11,9 @@ DeepCellMap ✨
 `DeepCellMap` is a Python package containing methods for analyzing the spatial distribution of cells in tissues (histological images and fluorescence images). DeepCellMap consists of various independent modules enabling cell detection and classification, segmentation of anatomical regions, analysis of cell-cell and cell-region couplings, as well as analysis of the distribution of cell populations in clusters and the interactions between clusters of different populations.
 
 
-# How tu use DeepCellMap ? 
+# How to use DeepCellMap ? 
 
-The notebooks provided in `./DeepCellMap_V2_general_use/` offer a step-by-step guidance for users (with a minimum of Python experience) in using DeepCellMap with any dataset. In addition to the explanations provided in the notebooks, the user can consult the documentation in `./docs`, where the following documents can be found: 
+The notebooks provided in `./DeepCellMap_V2_general_use/` offer a step-by-step guidance for users (with a minimum of Python experience) to use DeepCellMap with any dataset. In addition to the explanations provided in the notebooks, the user can consult the documentation in `./docs`, where the following documents can be found: 
 
 -  `Application of DeepCellMap to a new Dataset.pdf`
 - `ConfigFile_explanation_(1_dataset__1_Config_file).pdf` and 
